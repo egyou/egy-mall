@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+	<head>
+		<!-- Basic Page Info -->
+		<meta charset="utf-8" />
+		<title>Member List</title>
+		<div th:replace="~{/main/fragments :: head}"></div>
+	</head>
+	<body>
+		<div th:replace="~{/main/fragments :: header}"></div>
+		<div th:replace="~{/main/fragments :: right-sidebar}"></div>
+		<div th:replace="~{/main/fragments :: left-sidebar}"></div>
+		<div class="mobile-menu-overlay"></div>
+
+		<div class="main-container">
+			<div class="pd-ltr-20 xs-pd-20-10">
+				<div class="min-height-200px">
+					<div class="page-header">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<div class="title">
+									<h4>Basic Tables</h4>
+								</div>
+								<nav aria-label="breadcrumb" role="navigation">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">
+											<a href="index.html">Home</a>
+										</li>
+										<li class="breadcrumb-item active" aria-current="page">
+											Basic Tables
+										</li>
+									</ol>
+								</nav>
+							</div>
+							<div class="col-md-6 col-sm-12 text-right">
+								<div class="dropdown">
+									<a
+										class="btn btn-primary dropdown-toggle"
+										href="#"
+										role="button"
+										data-toggle="dropdown"
+									>
+										January 2018
+									</a>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Export List</a>
+										<a class="dropdown-item" href="#">Policies</a>
+										<a class="dropdown-item" href="#">View Assets</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- basic table  Start -->
+					<div class="pd-20 card-box mb-30">
+						<div class="clearfix mb-20">
+							<div class="pull-left">
+								<h4 class="text-blue h4">Basic Table</h4>
+								<p>Add class <code>.table</code></p>
+							</div>
+							<div class="pull-right">
+								<a
+									href="#basic-table"
+									class="btn btn-primary btn-sm scroll-click"
+									rel="content-y"
+									data-toggle="collapse"
+									role="button"
+									><i class="fa fa-code"></i> Source Code</a
+								>
+							</div>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+									<th scope="col">Tag</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td><span class="badge badge-primary">Primary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+									<td><span class="badge badge-secondary">Secondary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td><span class="badge badge-success">Success</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="collapse collapse-box" id="basic-table">
+							<div class="code-box">
+								<div class="clearfix">
+									<a
+										href="javascript:;"
+										class="btn btn-primary btn-sm code-copy pull-left"
+										data-clipboard-target="#basic-table-code"
+										><i class="fa fa-clipboard"></i> Copy Code</a
+									>
+									<a
+										href="#basic-table"
+										class="btn btn-primary btn-sm pull-right"
+										rel="content-y"
+										data-toggle="collapse"
+										role="button"
+										><i class="fa fa-eye-slash"></i> Hide Code</a
+									>
+								</div>
+								<pre><code class="xml copy-pre" id="basic-table-code">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+							</code></pre>
+							</div>
+						</div>
+					</div>
+					<!-- basic table  End -->
+					<!-- Bordered table  start -->
+					<div class="pd-20 card-box mb-30">
+						<div class="clearfix mb-20">
+							<div class="pull-left">
+								<h4 class="text-blue h4">Bordered table</h4>
+								<p>
+									Add <code>.table .table-bordered</code> for borders on all
+									sides of the table and cells.
+								</p>
+							</div>
+							<div class="pull-right">
+								<a
+									href="#border-table"
+									class="btn btn-primary btn-sm scroll-click"
+									rel="content-y"
+									data-toggle="collapse"
+									role="button"
+									><i class="fa fa-code"></i> Source Code</a
+								>
+							</div>
+						</div>
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+									<th scope="col">Tag</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td><span class="badge badge-primary">Primary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+									<td><span class="badge badge-secondary">Secondary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td><span class="badge badge-success">Success</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="collapse collapse-box" id="border-table">
+							<div class="code-box">
+								<div class="clearfix">
+									<a
+										href="javascript:;"
+										class="btn btn-primary btn-sm code-copy pull-left"
+										data-clipboard-target="#border-table-code"
+										><i class="fa fa-clipboard"></i> Copy Code</a
+									>
+									<a
+										href="#border-table"
+										class="btn btn-primary btn-sm pull-right"
+										rel="content-y"
+										data-toggle="collapse"
+										role="button"
+										><i class="fa fa-eye-slash"></i> Hide Code</a
+									>
+								</div>
+								<pre><code class="xml copy-pre" id="border-table-code">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+							</code></pre>
+							</div>
+						</div>
+					</div>
+					<!-- Bordered table End -->
+					<!-- Striped table start -->
+					<div class="pd-20 card-box mb-30">
+						<div class="clearfix mb-20">
+							<div class="pull-left">
+								<h4 class="text-blue h4">Striped table</h4>
+								<p>
+									Add <code>.table .table-striped</code> to add zebra-striping
+									to any table row within the <code>&lt;tbody&gt;</code>.
+								</p>
+							</div>
+							<div class="pull-right">
+								<a
+									href="#striped-table"
+									class="btn btn-primary btn-sm scroll-click"
+									rel="content-y"
+									data-toggle="collapse"
+									role="button"
+									><i class="fa fa-code"></i> Source Code</a
+								>
+							</div>
+						</div>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+									<th scope="col">Tag</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td><span class="badge badge-primary">Primary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+									<td><span class="badge badge-secondary">Secondary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td><span class="badge badge-success">Success</span></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+									<td><span class="badge badge-secondary">Secondary</span></td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td><span class="badge badge-success">Success</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="collapse collapse-box" id="striped-table">
+							<div class="code-box">
+								<div class="clearfix">
+									<a
+										href="javascript:;"
+										class="btn btn-primary btn-sm code-copy pull-left"
+										data-clipboard-target="#striped-table-code"
+										><i class="fa fa-clipboard"></i> Copy Code</a
+									>
+									<a
+										href="#striped-table"
+										class="btn btn-primary btn-sm pull-right"
+										rel="content-y"
+										data-toggle="collapse"
+										role="button"
+										><i class="fa fa-eye-slash"></i> Hide Code</a
+									>
+								</div>
+								<pre><code class="xml copy-pre" id="striped-table-code">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+    </tr>
+  </tbody>
+</table>
+							</code></pre>
+							</div>
+						</div>
+					</div>
+					<!-- Striped table End -->
+					<!-- Responsive tables Start -->
+					<div class="pd-20 card-box mb-30">
+						<div class="clearfix mb-20">
+							<div class="pull-left">
+								<h4 class="text-blue h4">Responsive table</h4>
+								<p>
+									Responsive tables allow tables to be scrolled horizontally
+									with ease. Make any table responsive across all viewports by
+									wrapping a <code>.table .table-responsive</code> Or, pick a
+									maximum breakpoint with which to have a responsive table up to
+									by using<code>.table-responsive{-sm|-md|-lg|-xl}</code>.
+								</p>
+							</div>
+							<div class="pull-right">
+								<a
+									href="#responsive-table"
+									class="btn btn-primary btn-sm scroll-click"
+									rel="content-y"
+									data-toggle="collapse"
+									role="button"
+									><i class="fa fa-code"></i> Source Code</a
+								>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+										<th scope="col">Tag</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+										<td><span class="badge badge-primary">Primary</span></td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+										<td>
+											<span class="badge badge-secondary">Secondary</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+										<td>
+											<span class="badge badge-secondary">Secondary</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="collapse collapse-box" id="responsive-table">
+							<div class="code-box">
+								<div class="clearfix">
+									<a
+										href="javascript:;"
+										class="btn btn-primary btn-sm code-copy pull-left"
+										data-clipboard-target="#responsive-table-code"
+										><i class="fa fa-clipboard"></i> Copy Code</a
+									>
+									<a
+										href="#responsive-table"
+										class="btn btn-primary btn-sm pull-right"
+										rel="content-y"
+										data-toggle="collapse"
+										role="button"
+										><i class="fa fa-eye-slash"></i> Hide Code</a
+									>
+								</div>
+								<pre><code class="xml copy-pre" id="responsive-table-code">
+<div class="table-responsive">
+	<table class="table table-striped">
+	  <thead>
+	    <tr>
+	      <th scope="col">#</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+							</code></pre>
+							</div>
+						</div>
+					</div>
+					<!-- Responsive tables End -->
+					<!-- Contextual classes Start -->
+					<div class="pd-20 card-box mb-30">
+						<div class="clearfix mb-20">
+							<div class="pull-left">
+								<h4 class="text-blue h4">Contextual classes</h4>
+								<p>
+									Use classes
+									<code
+										>( .table-active, .table-success, .table-info,
+										.table-warning, .table-danger )</code
+									>
+									to color table rows or individual cells
+								</p>
+							</div>
+							<div class="pull-right">
+								<a
+									href="#contextual-table"
+									class="btn btn-primary btn-sm scroll-click"
+									rel="content-y"
+									data-toggle="collapse"
+									role="button"
+									><i class="fa fa-code"></i> Source Code</a
+								>
+							</div>
+						</div>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+										<th scope="col">Tag</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="table-active">
+										<th scope="row">1</th>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+										<td><span class="badge badge-primary">Primary</span></td>
+									</tr>
+									<tr class="table-primary">
+										<th scope="row">2</th>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+										<td>
+											<span class="badge badge-secondary">Secondary</span>
+										</td>
+									</tr>
+									<tr class="table-secondary">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+									<tr class="table-success">
+										<th scope="row">2</th>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+										<td>
+											<span class="badge badge-secondary">Secondary</span>
+										</td>
+									</tr>
+									<tr class="table-danger">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+									<tr class="table-warning">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+									<tr class="table-info">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+									<tr class="table-dark">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+									<tr class="table-light">
+										<th scope="row">3</th>
+										<td>Larry</td>
+										<td>the Bird</td>
+										<td>@twitter</td>
+										<td><span class="badge badge-success">Success</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="collapse collapse-box" id="contextual-table">
+							<div class="code-box">
+								<div class="clearfix">
+									<a
+										href="javascript:;"
+										class="btn btn-primary btn-sm code-copy pull-left"
+										data-clipboard-target="#contextual-table-code"
+										><i class="fa fa-clipboard"></i> Copy Code</a
+									>
+									<a
+										href="#contextual-table"
+										class="btn btn-primary btn-sm pull-right"
+										rel="content-y"
+										data-toggle="collapse"
+										role="button"
+										><i class="fa fa-eye-slash"></i> Hide Code</a
+									>
+								</div>
+								<pre><code class="xml copy-pre" id="contextual-table-code">
+<div class="table-responsive">
+	<table class="table table-striped">
+	  <tbody>
+	    <tr class="table-active"><td></td></tr>
+		<tr class="table-primary"><td></td></tr>
+		<tr class="table-secondary"><td></td></tr>
+		<tr class="table-success"><td></td></tr>
+		<tr class="table-danger"><td></td></tr>
+		<tr class="table-warning"><td></td></tr>
+		<tr class="table-info"><td></td></tr>
+		<tr class="table-light"><td></td></tr>
+		<tr class="table-dark"><td></td></tr>
+	  </tbody>
+	</table>
+</div>
+							</code></pre>
+							</div>
+						</div>
+					</div>
+					<!-- Contextual classes End -->
+				</div>
+				<div class="footer-wrap pd-20 mb-20 card-box">
+					DeskApp - Bootstrap 4 Admin Template By
+					<a href="https://github.com/dropways" target="_blank"
+						>Ankit Hingarajiya</a
+					>
+				</div>
+			</div>
+		</div>
+		<!-- welcome modal start -->
+		<div class="welcome-modal">
+			<button class="welcome-modal-close">
+				<i class="bi bi-x-lg"></i>
+			</button>
+			<iframe
+				class="w-100 border-0"
+				src="https://embed.lottiefiles.com/animation/31548"
+			></iframe>
+			<div class="text-center">
+				<h3 class="h5 weight-500 text-center mb-2">
+					Open source
+					<span role="img" aria-label="gratitude">❤️</span>
+				</h3>
+				<div class="pb-2">
+					<a
+						class="github-button"
+						href="https://github.com/dropways/deskapp"
+						data-color-scheme="no-preference: dark; light: light; dark: light;"
+						data-icon="octicon-star"
+						data-size="large"
+						data-show-count="true"
+						aria-label="Star dropways/deskapp dashboard on GitHub"
+						>Star</a
+					>
+					<a
+						class="github-button"
+						href="https://github.com/dropways/deskapp/fork"
+						data-color-scheme="no-preference: dark; light: light; dark: light;"
+						data-icon="octicon-repo-forked"
+						data-size="large"
+						data-show-count="true"
+						aria-label="Fork dropways/deskapp dashboard on GitHub"
+						>Fork</a
+					>
+				</div>
+			</div>
+			<div class="text-center mb-1">
+				<div>
+					<a
+						href="https://github.com/dropways/deskapp"
+						target="_blank"
+						class="btn btn-light btn-block btn-sm"
+					>
+						<span class="text-danger weight-600">STAR US</span>
+						<span class="weight-600">ON GITHUB</span>
+						<i class="fa fa-github"></i>
+					</a>
+				</div>
+				<script
+					async
+					defer="defer"
+					src="https://buttons.github.io/buttons.js"
+				></script>
+			</div>
+			<a
+				href="https://github.com/dropways/deskapp"
+				target="_blank"
+				class="btn btn-success btn-sm mb-0 mb-md-3 w-100"
+			>
+				DOWNLOAD
+				<i class="fa fa-download"></i>
+			</a>
+			<p class="font-14 text-center mb-1 d-none d-md-block">
+				Available in the following technologies:
+			</p>
+			<div class="d-none d-md-flex justify-content-center h1 mb-0 text-danger">
+				<i class="fa fa-html5"></i>
+			</div>
+		</div>
+		<button class="welcome-modal-btn">
+			<i class="fa fa-download"></i> Download
+		</button>
+		<!-- welcome modal end -->
+		<!-- js -->
+		<script src="vendors/scripts/core.js"></script>
+		<script src="vendors/scripts/script.min.js"></script>
+		<script src="vendors/scripts/process.js"></script>
+		<script src="vendors/scripts/layout-settings.js"></script>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+	</body>
+</html>

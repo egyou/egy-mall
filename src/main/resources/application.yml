@@ -1,0 +1,30 @@
+spring:
+  main:
+    banner-mode: off
+  thymeleaf:
+    cache: false
+#  datasource:
+#    url: ${db.url}
+#    username: ${db.username}
+#    password: ${db.password}
+#    driver-class-name: ${db.driver-class-name}
+  jpa:
+    defer-datasource-initialization: true
+    open-in-view: false # 트랜잭션 범위 밖에서 영속성 컨텍스트를 유지할지 여부
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update # create-drop, update, validate, none
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+server:
+  port: 7070
+  servlet:
+    session:
+      timeout: 600
+db:
+  url: jdbc:mysql://localhost:3306/db200412345
+  username: ab200412345
+  password: cometrue
+  driver-class-name: com.mysql.cj.jdbc.Driver

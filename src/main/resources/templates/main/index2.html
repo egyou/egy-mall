@@ -266,7 +266,7 @@
 							<span class="user-icon">
 								<img src="../vendors/images/photo1.jpg" alt="" />
 							</span>
-							<span class="user-name" th:text="${member.email}"></span>
+							<span class="user-name" th:text="${memberDto.email}"></span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -466,7 +466,7 @@
 
 		<div class="left-side-bar">
 			<div class="brand-logo">
-				<a href="index.html">
+				<a href="../">
 					<img src="../vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
 					<img
 						src="../vendors/images/deskapp-logo-white.svg"
@@ -593,7 +593,7 @@
 								><span class="mtext">Error Pages</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="400.html">400</a></li>
+								<li><a href="../errors/error-message.html">400</a></li>
 								<li><a href="403.html">403</a></li>
 								<li><a href="404.html">404</a></li>
 								<li><a href="500.html">500</a></li>
@@ -706,7 +706,7 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-12">
 							<div class="title">
-								<h4>Dashboard : <span th:text="${member.id}"></span></h4>
+								<h4>Dashboard : <span th:text="${memberDto.name}"></span></h4>
 							</div>
 							<nav aria-label="breadcrumb" role="navigation">
 								<ol class="breadcrumb">

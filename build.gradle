@@ -1,5 +1,6 @@
 plugins {
 	id 'java'
+	// id 'war'
 	id 'org.springframework.boot' version '3.2.3'
 	id 'io.spring.dependency-management' version '1.1.4'
 }
@@ -22,6 +23,8 @@ repositories {
 }
 
 dependencies {
+	implementation 'com.mysql:mysql-connector-j:8.2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.2.5'
 	compileOnly('jakarta.servlet:jakarta.servlet-api:6.0.0')
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
